@@ -12,6 +12,17 @@ A personal portfolio site deployed on AWS S3 and served globally via CloudFront 
 Browser → CloudFront (HTTPS + global CDN) → S3 Bucket (static files)
 ```
 
+## Screenshots
+
+### Live Site
+<img width="1912" height="1026" alt="s3-staticwebsite-cloudfront-hosted" src="https://github.com/user-attachments/assets/7b292a4f-4eba-425f-b398-5de15a8fa0b1" />
+
+### S3 Bucket
+<img width="1508" height="516" alt="aws-staticwebsite-cloudfront-s3bucket" src="https://github.com/user-attachments/assets/674e5ff6-77bf-4087-b66f-241ff7bce90e" />
+
+### CloudFront Distribution
+<img width="1894" height="762" alt="aws-s3-staticwebsite-cloudfront-distribution" src="https://github.com/user-attachments/assets/59d039b0-445a-40de-9a54-3f8213c8d729" />
+
 - **S3** stores the static HTML file
 - **CloudFront** sits in front of S3 and handles HTTPS, caching, and global delivery
 - **Bucket policy** allows CloudFront to read files from S3
