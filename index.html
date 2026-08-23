@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VP | Cloud Engineering Journey</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0a0a0f;
+      color: #e8e8f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container { max-width: 700px; width: 100%; }
+    .tag { color: #4f8ef7; font-size: 13px; margin-bottom: 1rem; }
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .subtitle { color: #6b6b80; margin-bottom: 2rem; font-size: 15px; }
+    .section { margin-bottom: 2rem; }
+    .section-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: #4f8ef7;
+      margin-bottom: 1rem;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill {
+      background: #111118;
+      border: 1px solid #1e1e2e;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      color: #c8c8d8;
+    }
+    .project {
+      background: #111118;
+      border: 1px solid #1e1e2e;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 10px;
+    }
+    .project-name { font-weight: 600; margin-bottom: 4px; color: #e8e8f0; }
+    .project-desc { font-size: 13px; color: #6b6b80; line-height: 1.6; }
+    .footer { margin-top: 2rem; font-size: 12px; color: #3a3a4a; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tag">// cloud_engineer_in_progress</div>
+    <h1>Vishwa P.</h1>
+    <p class="subtitle">CS Student at Queens College · Building toward a cloud engineering internship</p>
+
+    <div class="section">
+      <div class="section-title">// skills</div>
+      <div class="skills">
+        <span class="skill">Bash Scripting</span>
+        <span class="skill">Linux</span>
+        <span class="skill">AWS EC2</span>
+        <span class="skill">AWS S3</span>
+        <span class="skill">IAM</span>
+        <span class="skill">AWS CLI</span>
+        <span class="skill">Git</span>
+        <span class="skill">Cron Jobs</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">// projects</div>
+      <div class="project">
+        <div class="project-name">System Health Monitor</div>
+        <div class="project-desc">Bash script that monitors CPU, memory, and disk usage on a live EC2 instance. Logs every report automatically and alerts when thresholds are exceeded.</div>
+      </div>
+      <div class="project">
+        <div class="project-name">Automated Log Cleaner</div>
+        <div class="project-desc">Bash script scheduled with cron that trims oversized log files and deletes logs older than 7 days automatically.</div>
+      </div>
+      <div class="project">
+        <div class="project-name">S3 Backup System</div>
+        <div class="project-desc">Compresses scripts into timestamped archives and uploads them to AWS S3. Logs every backup with success or failure status.</div>
+      </div>
+      <div class="project">
+        <div class="project-name">Static Site on S3 + CloudFront</div>
+        <div class="project-desc">This page — hosted on AWS S3 and served globally via CloudFront with HTTPS.</div>
+      </div>
+    </div>
+
+    <div class="footer">Hosted on AWS S3 + CloudFront · Built with the AWS CLI</div>
+  </div>
+</body>
+</html>
