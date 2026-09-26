@@ -1,6 +1,6 @@
 # Static Portfolio Site — AWS S3 + CloudFront
 
-A personal portfolio site deployed on AWS S3 and served globally via CloudFront with HTTPS. 
+My personal portfolio site, (which is not done yet, but I have done this to demonstrate the process I went through) I deployed on AWS S3 and served globally through CloudFront with HTTPS. You can upload any static files to the S3 bucket, set up the bucket permissions, enable static website hosting for that file and CloudFront will deliver it, but I chose to use my temporary cloud portfolio. 
 
 **Live URL:** https://d2h1uboex2xxrt.cloudfront.net
 
@@ -26,7 +26,6 @@ Browser → CloudFront (HTTPS + global CDN) → S3 Bucket (static files)
 - **S3** stores the static HTML file
 - **CloudFront** sits in front of S3 and handles HTTPS, caching, and global delivery
 - **Bucket policy** allows CloudFront to read files from S3
-- No server, no EC2, no backend — just static files served at scale
 
 ---
 
@@ -113,7 +112,6 @@ aws cloudfront create-distribution \
 ## Skills demonstrated
 
 - AWS CLI (S3, CloudFront, IAM)
-- Cloud infrastructure deployment without the console
 - IAM least-privilege security practices
 - Static site architecture on AWS
 - Linux / WSL2 environment
